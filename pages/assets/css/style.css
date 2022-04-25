@@ -1,0 +1,256 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Mono:wght@100&display=swap');
+
+
+body {
+  background-image: linear-gradient(to top, #606060, #000000, #606060);
+  text: 20px;
+  font-family: 'Roboto mono', monospace;
+}
+p {
+  margin-bottom: 50px;
+}
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 40px;
+  flex-direction: row; 
+  font-weight: bold;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+.box {
+  align-items: flex-start;
+  width: 50%;
+}
+.header-box {
+  display: flex;
+  text-transform: uppercase;
+  padding: 10px;
+  font:10px;
+  padding-bottom: none;
+  color: yellowgreen;
+  width: 50%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.border-img {
+  border: 1px solid yellowgreen;
+}
+
+.voice {
+  display: flex;
+  font-weight: bold;
+  align-items: flex-end;
+}
+
+a:link {
+  text-decoration: none;
+  color: yellowgreen;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: yellowgreen;
+}
+
+.structure {
+  display: flex;
+  width:100%;
+  padding:20px;
+  color:#d6d0d5;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  align-content: space-between;
+}
+
+.structure-box {
+  padding: 20px;
+  line-height: 1;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  flex-wrap: wrap;
+}
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  border-top: 2px solid white;
+}
+.social-container {
+  padding-left: 50px;
+  padding-top: 50px;
+  line-height: 2;
+  color:#d6d0d5;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  color: yellowgreen;
+}
+
+.text-box-portfolio {
+  display: flex;
+  padding: 30px;
+  margin: 25px;
+  background-color: #808080;
+  border: 2px solid yellowgreen;
+  color:#000000;
+  line-height: 30px;
+  flex-flow: column;
+  flex-wrap: wrap;
+  width: 270px;
+  height: 530px;
+  box-shadow: 0 4px 8px 0 yellowgreen;
+  border-radius: 5px; 
+}
+
+.portfolio-img {
+  display: flex;
+  width: 30%;
+}
+
+.portfolio-title {
+  color: black;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.portfolio-text {
+  height: 15px;
+}
+
+.structure-contacts {
+  display: flex;
+  width:100%;
+  color: black;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.speaker-form-header {
+  text-align: center;
+  width: 100%;
+  padding: 50px;
+}
+
+.speaker-form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.speaker-form {
+  background-color: #808080;
+  border: 2px solid yellowgreen;
+  color:#000000;
+  box-shadow: 0 4px 8px 0 yellowgreen;
+  border-radius: 5px;
+  width: 100%;
+  padding: 20px;
+}
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text'] ,
+.form-row input[type='email']{
+  background-color: #ABABAB;
+  border: 1px solid yellowgreen;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+
+.form-row textarea {
+  font-size: 14px;
+  background-color: #ABABAB;
+  border: 1px solid yellowgreen;
+  color: black;
+  width:100%;
+  border-radius: 3px;
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  flex-wrap: wrap;
+  resize: none;
+}
+
+.form-row .instructions {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.button {
+  font-size: 20px;
+  font-family: "Roboto mono", monospace;
+  padding: 8px;
+  background-color: black;
+  color:yellowgreen;
+  box-shadow: 0 2px 4px 0 yellowgreen;
+  border-radius: 20px;
+}
+
+@media screen and (min-width:401px) and (max-width:960px) {
+  .structure-box {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.5;
+  }
+  .structure-contacts {
+    padding:20px;
+  }
+
+  
+}
+
+@media screen and (min-width:961px) {
+  .structure-box {
+  padding: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
+  line-height: 2;
+  font-size: 20px;
+  }
+  .header-box {
+    font-size: 20px;
+}
+.social-container {
+  padding-left: 100px;
+  padding-top: 70px;
+}
+.structure-contacts {
+  padding:120px;
+}
+.speaker-form {
+  padding:50px;
+}
+}
